@@ -5,8 +5,8 @@ $res = $conexion->query("SELECT p.*, u.nombre, u.grado, u.grupo FROM pedidos p J
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<head><title>Dueño - CECYTE</title><link rel="stylesheet" href="css/estilos.css"></head>
-<body style="background-image: url('img/Portada.png'); background-size: cover; background-attachment: fixed;">
+<head><title>Dueño - CECYTE</title><link rel="stylesheet" href="estilos.css"></head>
+<body style="background-image: url('Portada.png'); background-size: cover; background-attachment: fixed;">
     <h2>Pedidos Recibidos - Tepeyanco</h2>
     <table border="1" style="width:100%; max-width:800px; background:white; border-collapse:collapse;">
         <tr style="background:var(--guinda); color:white;">
