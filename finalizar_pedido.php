@@ -17,7 +17,7 @@ if (isset($_POST['finalizar'])) {
 <!DOCTYPE html>
 <html lang="es">
 <head><title>Ticket - CECYTE</title><link rel="stylesheet" href="estilos.css"></head>
-<body style="background-image: url('img/Portada.png'); background-size: cover; background-attachment: fixed;">
+<body style="background-image: url('Portada.png'); background-size: cover; background-attachment: fixed;">
     <div class="ticket">
         <h2 style="margin:0;">Comprobante de Pedido</h2>
         <div class="codigo-texto"><?php echo $cod; ?></div>
