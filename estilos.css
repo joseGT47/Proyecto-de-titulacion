@@ -1,0 +1,92 @@
+:root {
+    /* Colores extraídos de la imagen */
+    --verde-cecyte: #137d3d;    /* Verde del logo y bordes */
+    --guinda-mex: #6a1b1b;      /* Guinda de los detalles decorativos */
+    --naranja-cecyte: #e85b23;  /* Naranja del texto CECYTE */
+    --fondo: #f4f4f4;           /* Gris muy claro para resaltar tarjetas */
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: var(--fondo);
+    margin: 0; padding: 20px;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+/* Óvalo para el Logo del CECYTE */
+.logo-ovalo {
+    width: 160px; height: 110px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid var(--verde-cecyte); /* Cambiado a verde */
+    display: flex; justify-content: center; align-items: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.logo-ovalo img { width: 85%; height: auto; }
+
+h2 { color: var(--verde-cecyte); text-align: center; margin-bottom: 25px; }
+
+/* Botones de Categoría Horizontales */
+.filtros {
+    display: flex; flex-direction: row;
+    gap: 8px; margin-bottom: 20px;
+    width: 100%; max-width: 550px;
+    overflow-x: auto; padding: 10px 5px;
+}
+.btn-filtro {
+    padding: 10px 18px; background: white;
+    border: 2px solid var(--verde-cecyte); color: var(--verde-cecyte);
+    border-radius: 25px; cursor: pointer;
+    font-weight: bold; white-space: nowrap; transition: 0.3s;
+}
+.btn-active { background: var(--verde-cecyte) !important; color: white !important; }
+
+/* Tarjetas de Producto */
+.producto-card {
+    background: white; border-radius: 12px;
+    display: flex; align-items: center; padding: 12px;
+    margin-bottom: 10px; width: 100%; max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-left: 5px solid var(--naranja-cecyte); /* Detalle en naranja */
+}
+.producto-card img { border-radius: 8px; object-fit: cover; }
+
+/* Ticket QR */
+.ticket {
+    background: white; padding: 30px; text-align: center;
+    border: 3px dashed var(--guinda-mex); /* Mantenemos guinda para el ticket */
+    border-radius: 10px;
+    width: 100%; max-width: 400px;
+}
+.codigo-texto {
+    font-size: 26px; color: var(--verde-cecyte);
+    font-weight: bold; background: #e8f5e9; /* Fondo verde muy claro */
+    padding: 15px; margin: 20px 0; border-radius: 8px;
+}
+
+/* Formularios */
+form {
+    background: white; padding: 25px; border-radius: 15px;
+    width: 100%; max-width: 420px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-top: 6px solid var(--verde-cecyte);
+}
+input, textarea {
+    width: 100%; padding: 12px; margin: 8px 0;
+    border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;
+}
+input:focus {
+    border-color: var(--naranja-cecyte);
+    outline: none;
+}
+button {
+    width: 100%; padding: 14px; background: var(--verde-cecyte);
+    color: white; border: none; border-radius: 6px;
+    font-weight: bold; cursor: pointer; font-size: 16px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: var(--guinda-mex); /* Cambio de color al pasar el mouse */
+}
