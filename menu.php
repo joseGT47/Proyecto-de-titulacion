@@ -14,7 +14,7 @@ $productos = [
 <html lang="es">
 <head>
     <title>Menú - CECYTE</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <script>
         function filtrar(c) {
             document.querySelectorAll('.producto-card').forEach(p => p.style.display = (c=='todo'||p.dataset.cat==c)?'flex':'none');
@@ -29,7 +29,7 @@ $productos = [
         }
     </script>
 </head>
-<body style="background-image: url('img/Portada.png'); background-size: cover; background-attachment: fixed;">
+<body style="background-image: url('Portada.png'); background-size: cover; background-attachment: fixed;">
     <h2>Menú CECYTE 06</h2>
     <div class="filtros">
         <button class="btn-filtro btn-active" onclick="filtrar('todo')">Todo</button>
