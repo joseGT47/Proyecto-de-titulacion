@@ -9,9 +9,9 @@ if (isset($_POST['login'])) {
 } ?>
 <!DOCTYPE html>
 <html lang="es">
-<head><title>CECYTE 06 - Login</title><link rel="stylesheet" href="css/estilos.css"></head>
-<body style="background-image: url('img/Portada.png'); background-size: cover; background-attachment: fixed;">
-    <div class="logo-ovalo"><img src="img/Cecyte.jpg" alt="Logo"></div>
+<head><title>CECYTE 06 - Login</title><link rel="stylesheet" href="estilos.css"></head>
+<body style="background-image: url('Portada.png'); background-size: cover; background-attachment: fixed;">
+    <div class="logo-ovalo"><img src="Cecyte.jpg" alt="Logo"></div>
     <h2>Acceso Cooperativa Tepeyanco</h2>
     <form method="POST">
         <input type="email" name="correo" placeholder="Correo Institucional" required>
